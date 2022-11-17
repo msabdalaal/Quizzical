@@ -9,7 +9,7 @@ export default function Home() {
       <img src={blob2} alt="blob2" className="blob2" />
       <h1>Quizzical</h1>
       <p>Test Your Mind</p>
-      <a href="../../../Quizz.html">Start quiz</a>
+      <a href={"/Quizzical/Quizz.html"}>Start quiz</a>
     </>
   );
 }
