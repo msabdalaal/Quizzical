@@ -43,9 +43,3 @@
   background: #f8bcbc;
   border: 1px solid #f8bcbc;
 }
-@media screen and (max-width: 600px) {
-  .answer button:hover {
-    cursor: pointer;
-    background: transparent;
-  }
-}
