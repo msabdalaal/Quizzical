@@ -6,7 +6,6 @@
 body {
   background-color: #f5f7fb;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -20,14 +19,16 @@ body {
   text-align: center;
   color: #293264;
   overflow: hidden;
+  width: 100vw;
 }
 .home h1 {
   margin-bottom: 1rem;
   font-weight: 700;
+  font-size: 3rem;
 }
 .home p {
   margin-bottom: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .home button {
@@ -36,7 +37,7 @@ body {
   padding: 1rem 3.5rem;
   border-radius: 1rem;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   border: none;
   font-weight: 400;
   transition: 0.3s;
@@ -67,5 +68,15 @@ body {
   }
   .home .blob2 {
     transform: scale(1);
+  }
+  .home h1 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .home p {
+    font-size: 1.2rem;
+  }
+  .home button {
+    font-size: 1.1rem;
   }
 }
