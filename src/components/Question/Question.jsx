@@ -11,11 +11,7 @@ export default function Question({
   let questionAnswers = answersOrder.map((answer) => {
     return (
       <div key={answer} className="answer">
-        <button
-          onClick={(event) => handleClick(event)}
-          data-correct={correct}
-          value={answer}
-        >
+        <button onClick={(event) => handleClick(event)} value={answer}>
           {answer}
         </button>
       </div>
