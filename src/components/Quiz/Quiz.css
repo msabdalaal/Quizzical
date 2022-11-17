@@ -7,10 +7,9 @@
 body {
   background: #f5f7fb;
   padding: 1rem 10rem;
-  height: 100vh;
 }
 .Questions .blob1 {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   transform: scale(2);
@@ -18,7 +17,7 @@ body {
   z-index: -1;
 }
 .Questions .blob2 {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   transform: scale(2);
