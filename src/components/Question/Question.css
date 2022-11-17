@@ -2,10 +2,11 @@
   border-bottom: 1px solid #dbdef0;
   margin-top: 1rem;
 }
-.question h1 {
+.question h1 p {
   font-size: 1.5rem;
   color: #293264;
   margin-bottom: 1rem;
+  text-align: left;
 }
 .answers {
   display: flex;

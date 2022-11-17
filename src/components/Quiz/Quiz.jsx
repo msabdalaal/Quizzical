@@ -4,7 +4,7 @@ import "./Quiz.css";
 import Question from "../Question/Question";
 import { useEffect, useState } from "react";
 
-export default function Quizz() {
+export default function Quizz({ TryAgain }) {
   let [Questions, setQuestions] = useState([]);
   let [correctAnswers, setCorrectAnswers] = useState({ empty: true });
   let [correctCount, setCorrectCount] = useState(0);
@@ -62,18 +62,15 @@ export default function Quizz() {
 Select Some Answers, Man`)
       : setShowAgain(true);
   }
-  function tryAgain() {
-    window.location.href = "../../../index.html";
-  }
   return (
-    <>
+    <div className="Questions">
       {" "}
       <div className="questionContainer">{QuestionsElements}</div>
       <div className="btnContainer">
         {showAgain ? (
           <>
             <h2>You scored {correctCount}/5 correct answers</h2>
-            <button onClick={tryAgain} className="check">
+            <button onClick={TryAgain} className="check">
               Try Again
             </button>
           </>
@@ -83,6 +80,6 @@ Select Some Answers, Man`)
           </button>
         )}
       </div>
-    </>
+    </div>
   );
 }

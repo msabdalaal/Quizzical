@@ -9,7 +9,7 @@ body {
   padding: 1rem 10rem;
   height: 100vh;
 }
-.blob1 {
+.Questions .blob1 {
   position: absolute;
   top: 0;
   right: 0;
@@ -17,7 +17,7 @@ body {
   transform-origin: top right;
   z-index: -1;
 }
-.blob2 {
+.Questions .blob2 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -26,23 +26,23 @@ body {
   z-index: -1;
 }
 @media screen and (max-width: 600px) {
-  .blob1 {
+  .Questions .blob1 {
     transform: scale(1);
   }
-  .blob2 {
+  .Questions .blob2 {
     transform: scale(1);
   }
   body {
     padding: 1rem 1rem;
   }
 }
-.btnContainer {
+.Questions .btnContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.check {
+.Questions .check {
   border: none;
   background-color: #4d5b9e;
   color: #f5f7fb;
@@ -55,10 +55,10 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.check:hover {
+.Questions .check:hover {
   cursor: pointer;
   box-shadow: 0px 0px 26px 4px #535f9a;
 }
-.btnContainer h2 {
+.Questions .btnContainer h2 {
   margin-right: 2rem;
 }
