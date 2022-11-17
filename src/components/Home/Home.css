@@ -10,15 +10,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
 }
 .home {
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #293264;
+  overflow: hidden;
 }
 .home h1 {
   margin-bottom: 1rem;

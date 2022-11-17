@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./Question.css";
 export default function Question({
@@ -7,7 +8,10 @@ export default function Question({
   handleClick,
 }) {
   let answers = [...incorrect, correct];
-  let answersOrder = answers.sort((a, b) => 0.5 - Math.random());
+  let [answersOrder, setAnswersOrder] = useState(
+    answers.sort((a, b) => 0.5 - Math.random())
+  );
+
   let questionAnswers = answersOrder.map((answer) => {
     return (
       <div key={answer} className="answer">
@@ -18,7 +22,7 @@ export default function Question({
     );
   });
   return (
-    <div className="question">
+    <div  className="question">
       <h1>
         <ReactMarkdown children={question} />
       </h1>

@@ -21,7 +21,12 @@ export default function Quizz({ TryAgain }) {
     function handleClick(e) {
       Array.from(e.target.parentElement.parentElement.children).map((e) => {
         e.children[0].classList.remove("active");
+        e.children[0].setAttribute("data", "normal");
+        if(e.children[0].value == question.correct_answer){
+          e.children[0].setAttribute("data-correct", "correct");
+        }
       });
+
       e.target.classList.toggle("active");
       if (e.target.value == question.correct_answer) {
         setCorrectAnswers({
@@ -29,12 +34,14 @@ export default function Quizz({ TryAgain }) {
           [question.question]: true,
           empty: false,
         });
+        e.target.setAttribute("data", "true");
       } else {
         setCorrectAnswers({
           ...correctAnswers,
           [question.question]: false,
           empty: false,
         });
+        e.target.setAttribute("data", "false");
       }
     }
     return (
@@ -63,7 +70,7 @@ Select Some Answers, Man`)
       : setShowAgain(true);
   }
   return (
-    <div className="Questions">
+    <div className={`Questions ${showAgain ? "showResult" : ""}`}>
       {" "}
       <div className="questionContainer">{QuestionsElements}</div>
       <div className="btnContainer">

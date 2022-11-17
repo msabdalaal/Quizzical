@@ -7,6 +7,7 @@
 body {
   background: #f5f7fb;
   padding: 1rem 10rem;
+  height: fit-content;
 }
 .Questions .blob1 {
   position: fixed;
@@ -32,7 +33,7 @@ body {
     transform: scale(1);
   }
   body {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 }
 .Questions .btnContainer {
@@ -60,4 +61,19 @@ body {
 }
 .Questions .btnContainer h2 {
   margin-right: 2rem;
+}
+.showResult [data="normal"] {
+  opacity: 0.5;
+}
+.showResult [data="true"].active {
+  background: #94d7a2;
+  border: 1px solid #94d7a2;
+}
+.showResult [data="false"].active {
+  background: #f8bcbc;
+  border: 1px solid #f8bcbc;
+}
+.showResult [data-correct="correct"] {
+  background: #94d7a2;
+  border: 1px solid #94d7a2;
 }
